@@ -1,0 +1,38 @@
+.activity--section{
+    padding-top: 0;
+}
+
+.activity__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+.activity-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity-list__wrapper {
+    position: relative;
+}
+
+.activity-list__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0 27px 0;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    background: rgba(47, 48, 58, 0.8);
+}

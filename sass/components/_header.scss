@@ -1,0 +1,112 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__logo{
+    text-decoration: none;
+    font-family: 'Raleway', 'Verdana';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $main-txt-color;
+}
+
+.header-nav__accent{
+    color: $light-blue-txt-color;
+}
+
+.header-menu{
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-menu__link {
+    display: block;
+    padding: 30px 0;
+    color: $main-txt-color;
+    transition: color 250ms $transition-timing-function;
+
+    &:hover,
+    :focus {
+        color: $light-blue-txt-color;
+    }
+
+    &:active{
+        color: $dark-blue-txt-color;
+    }
+}
+
+.header-menu__link--current {
+    position: relative;
+    color: $light-blue-txt-color;
+    
+    &:after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            height: 4px;
+            width: 100%;
+            border-radius: 2px;
+            background-color: $light-blue-txt-color;
+        }
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.headers-contacts__item {
+    margin-right: 50px;
+
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+.headers-contacts__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $grey-color;
+    transition: color 250ms $transition-timing-function;
+
+    &:hover,
+    :focus {
+        color: $light-blue-txt-color;
+        fill: $light-blue-txt-color;
+    }
+
+    &:active {
+        color: $dark-blue-txt-color;
+        fill: $dark-blue-txt-color;
+    }
+}
+
+.headers-contacts__icon {
+    margin-right: 10px;
+    fill: $current-svg-color;
+}

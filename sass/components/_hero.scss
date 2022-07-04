@@ -1,0 +1,51 @@
+.section-hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+    margin: 0 auto;
+    background-image:
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bgimg.jpg);
+    background-color: $dark-grey-color;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: $white-color;
+}
+
+.hero__button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px 10px 32px;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    background: $light-blue-txt-color;
+    color: $white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms $transition-timing-function, color 250ms $transition-timing-function;
+
+    &:hover,
+    :focus {
+        background-color: $medium-light-blue-color;
+    }
+
+    &:active {
+        background-color: $dark-blue-txt-color;
+    }
+}
