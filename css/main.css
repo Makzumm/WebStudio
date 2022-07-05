@@ -54,11 +54,26 @@ body {
 
 /* GLOBAL CONTAINER */
 .container {
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -76,12 +91,7 @@ body {
 }
 
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
 
 .header-nav__logo {
@@ -94,21 +104,34 @@ body {
   color: #212121;
 }
 
+@media screen and (max-width: 767px) {
+  .header-nav__logo {
+    padding: 16px 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    padding: 26px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding: 24px 0px 25px 0px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 .header-nav__accent {
   color: #2196F3;
 }
 
 .header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
-  margin-left: 93px;
   list-style: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: none;
 }
 
 .header-menu__link {
@@ -142,12 +165,7 @@ body {
 }
 
 .header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
 
 .headers-contacts__item {
@@ -202,18 +220,17 @@ body {
 }
 
 .hero__title {
+  display: block;
   margin-bottom: 30px;
-  text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   color: #ffffff;
 }
 
 .hero__button {
-  display: block;
   margin: 0 auto;
   padding: 10px 32px 10px 32px;
   border: none;
@@ -258,20 +275,11 @@ body {
 }
 
 .features-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
 }
 
 .features-list__item {
   width: 275px;
-}
-
-.features-list__item + .features-list__item {
-  margin-left: 30px;
 }
 
 .container-wrapper {
@@ -284,10 +292,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fA;
+}
+@media screen and (min-width: 480px) {
+  .container-wrapper .container-wrapper {
+    width: 450px;
+  }
 }
 
 .features-list__title {
@@ -307,6 +319,7 @@ body {
 
 .activity--section {
   padding-top: 0;
+  display: none;
 }
 
 .activity__title {
@@ -354,21 +367,11 @@ body {
 
 .team__title {
   margin-bottom: 50px;
-  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-.team-members-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .team-members-list__item {
@@ -383,7 +386,6 @@ body {
 }
 
 .team-members-information-block__name {
-  text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -394,23 +396,10 @@ body {
 
 .team-members-information-block__pos {
   margin-bottom: 16px;
-  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.team-members-social-net-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .team-members-social-net-list__item {
@@ -424,15 +413,6 @@ body {
 }
 
 .team-members-social-net-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -462,21 +442,11 @@ body {
 }
 
 .clients__title {
-  text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-}
-
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .client-list__link {
@@ -514,15 +484,6 @@ body {
 .footer {
   padding: 60px 0 60px 0;
   background-color: #2F303A;
-}
-
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .footer-contacts__logo {
@@ -588,8 +549,6 @@ body {
 }
 
 .footer-social-net-cont__title {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -603,6 +562,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-social-net-list__item {
@@ -652,24 +614,9 @@ body {
   margin-left: auto;
 }
 
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.input-submit-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer-form-input {
-  min-width: 358px;
+  width: 100%;
+  height: 50px;
   padding: 0 0 0 16px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -678,6 +625,7 @@ body {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: #ffffff;
   background-color: #2F303A;
+  margin-bottom: 20px;
 }
 
 .footer-title-email {
@@ -695,9 +643,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 auto;
   padding: 10px 28px 10px 28px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

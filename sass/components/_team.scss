@@ -4,7 +4,7 @@
 
 .team__title {
     margin-bottom: 50px;
-    text-align: center;
+    // text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -13,8 +13,8 @@
 }
 
 .team-members-list {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
 }
 
 .team-members-list__item {
@@ -28,7 +28,7 @@
 }
 
 .team-members-information-block__name {
-    text-align: center;
+    // text-align: center;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -39,7 +39,7 @@
 
 .team-members-information-block__pos {
     margin-bottom: 16px;
-    text-align: center;
+    // text-align: center;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -48,10 +48,10 @@
 
 
 .team-members-social-net-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+ }
 
 .team-members-social-net-list__item {
     margin-left: 10px;
@@ -66,9 +66,9 @@
 }
 
 .team-members-social-net-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
