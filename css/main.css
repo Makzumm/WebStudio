@@ -220,17 +220,18 @@ body {
 }
 
 .hero__title {
-  display: block;
   margin-bottom: 30px;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
+  font-size: 44px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
 }
 
 .hero__button {
+  display: block;
   margin: 0 auto;
   padding: 10px 32px 10px 32px;
   border: none;
@@ -288,6 +289,16 @@ body {
     gap: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .features-list__item {
   width: 100%;
@@ -295,6 +306,11 @@ body {
 @media screen and (min-width: 768px) {
   .features-list__item {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: 270px;
   }
 }
 
@@ -311,11 +327,6 @@ body {
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fA;
-}
-@media screen and (min-width: 480px) {
-  .container-wrapper .container-wrapper {
-    width: 450px;
-  }
 }
 
 .features-list__title {
@@ -336,6 +347,11 @@ body {
 .activity--section {
   padding-top: 0;
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  .activity--section {
+    display: block;
+  }
 }
 
 .activity__title {

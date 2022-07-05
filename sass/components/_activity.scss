@@ -1,6 +1,10 @@
 .activity--section{
     padding-top: 0;
     display: none;
+
+    @media screen and (min-width: $desktop-width) {
+        display: block;
+    }
 }
 
 .activity__title {
