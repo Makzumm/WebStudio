@@ -9,9 +9,28 @@
 }
 
 .header-nav{
-    // display: flex;
-    // align-items: center;
     display: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+    .header-nav{
+        display: flex;
+        align-items: center;
+        margin-right: 88px;
+    }
+}
+
+.nav-cont{
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+    .nav-cont {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .header-nav__logo{
@@ -24,41 +43,19 @@
     color: $main-txt-color;
 }
 
-@media screen and (max-width: 767px) {
-    .header-nav__logo {
-        padding: 16px 0px
-    }
-}
-
-@media screen and (min-width: 768px)and (max-width: 1199px) {
-    .logo {
-        padding: 26px 0px
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .logo {
-        padding: 24px 0px 25px 0px;
-        font-size: 26px;
-        line-height: 1.19
-    }
-}
-
-
 .header-nav__accent{
     color: $light-blue-txt-color;
 }
 
 .header-menu{
-    // display: flex;
-    // gap: 50px;
-    // margin-left: 93px;
+    display: flex;
+    gap: 50px;
+    margin-left: 0;
     list-style: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: none;
 }
 
 .header-menu__link {
@@ -94,13 +91,13 @@
 }
 
 .header-contacts {
-    // display: flex;
-    // align-items: center;
-    display: none;
+    display: flex;
+    align-items: center;
+
 }
 
 .headers-contacts__item {
-    margin-right: 50px;
+    margin-right: 30px;
 
     &:last-child {
             margin-right: 0;
@@ -121,12 +118,10 @@
     &:hover,
     :focus {
         color: $light-blue-txt-color;
-        fill: $light-blue-txt-color;
     }
 
     &:active {
         color: $dark-blue-txt-color;
-        fill: $dark-blue-txt-color;
     }
 }
 
@@ -134,3 +129,4 @@
     margin-right: 10px;
     fill: $current-svg-color;
 }
+

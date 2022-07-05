@@ -15,7 +15,7 @@
 .team-members-list {
     display: block;
 
-    @media screen and (min-width:$tablet-width) {
+    @media screen and (min-width: $tablet-width) {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

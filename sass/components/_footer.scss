@@ -9,6 +9,14 @@
 }
 
 @media screen and (min-width: $desktop-width) {
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
     .footer-contacts {
         text-align: left;
         margin-bottom: 0;
@@ -32,13 +40,6 @@
         }
     }
 
-}
-
-@media screen and (min-width: $desktop-width) {
-    .footer-container {
-        display: flex;
-        align-items: baseline;
-    }
 }
 
 .footer-contacts__logo {

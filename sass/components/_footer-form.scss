@@ -1,33 +1,35 @@
+
 .footer-form-container {
     margin-left: auto;
 }
 
-@media screen and (min-width: $tablet-width){
-    .footer-form{
+ @media screen and (min-width: $tablet-width) {
+    .footer-form {
         display: flex;
         justify-content: center;
-        align-items: center;
+        flex-direction: column;
+    }
+ }
+
+@media screen and (min-width: $tablet-width){
+    .input-submit-container {
+        display: inline-flex;
         flex-direction: column;
     }
 }
 
 @media screen and (min-width: $desktop-width) {
-    .footer-form {
+    .input-submit-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: baseline;
-    }
-}
-
-@media screen and (min-width:$desktop-width){
-    .input-submit-container{
-        display: flex;
     }
 }
 
 .footer-form-input {
     width: 100%;
     height: 50px;
+    margin-bottom: 20px;
     padding: 0 0 0 16px;
     margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -35,25 +37,27 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: $white-color;
     background-color: $dark-grey-color;
-    margin-bottom: 20px;
 }
 
-@media screen and (min-width: $tablet-width) {
-    .footer-form-input {
-        width: 450px;
+@media screen and (min-width: $tablet-width){
+    .footer-form-input{
+        max-width: 450px;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 }
 
-@media screen and (min-width: $desktop-width) {
+@media screen and (min-width: $desktop-width){
     .footer-form-input {
         width: 358px;
+        margin: 0;
     }
 }
 
 .footer-title-email {
     display: block;
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -63,27 +67,26 @@
 }
 
 @media screen and (min-width:$desktop-width) {
-    .footer-title-email{
+    .footer-title-email {
         text-align: left;
     }
 }
 
 .footer-form-button {
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        padding: 10px 28px 10px 28px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border: 0;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.875;
-        letter-spacing: 0.06em;
-        color: $white-color;
-        background: $light-blue-txt-color;
-        transition: background-color 250ms $transition-timing-function;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 28px 10px 28px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $white-color;
+    background: $light-blue-txt-color;
+    transition: background-color 250ms $transition-timing-function;
         
         &:hover,
         :focus {
@@ -96,13 +99,13 @@
         
 }
 
-@media screen and (min-width: $desktop-width){
-    .footer-form-button{
+ @media screen and (min-width: $desktop-width) {
+     .footer-form-button {
         display: flex;
         align-items: center;
-        max-height: 50px;
-    }
-}
+        margin-left: 12px;
+     }
+ }
 
 .footer-form-svg {
     margin-left: 10px;
