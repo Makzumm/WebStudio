@@ -17,12 +17,21 @@
 
 .features-list {
     display: block;
-    // display: flex;
-    // justify-content: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .features-list__item {
-    width: 275px;
+    width: 100%;
+
+    @media screen and (min-width: $tablet-width) {
+        width: 354px;
+    }
 }
 
 .features-list__item+.features-list__item {

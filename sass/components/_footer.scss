@@ -3,9 +3,42 @@
     background-color: $dark-grey-color;
 }
 
-.footer-container {
-    // display: flex;
-    // align-items: baseline;
+.footer-contacts{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .footer-contacts {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: $tablet-width) {
+    .footer-contacts-social-cont{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .footer-contacts-social-cont {
+        display: flex;
+
+        .footer-social-net-cont{
+            margin-left: 70px;
+        }
+    }
+
+}
+
+@media screen and (min-width: $desktop-width) {
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .footer-contacts__logo {

@@ -1,8 +1,16 @@
 .footer-social-net-cont {
-    margin-left: auto;
+    margin-bottom: 60px;
+
+}
+
+@media screen and (min-width: $desktop-width) {
+    .footer-social-net-cont{
+        margin: 0;
+    }
 }
 
 .footer-social-net-cont__title {
+    text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -12,8 +20,15 @@
     color: $white-color;
 }
 
+@media screen and (min-width: $desktop-width) {
+    .footer-social-net-cont__title {
+        text-align: left;
+    }
+}
+
 .footer-social-net-list {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
