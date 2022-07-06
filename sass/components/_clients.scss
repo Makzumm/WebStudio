@@ -1,6 +1,12 @@
 .clients {
-    padding: 74px 0 94px 0;
+    padding: 60px 0;
     background-color: $white-color;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .clients {
+        padding: 74px 0 94px 0;
+    }
 }
 
 .clients__title {
