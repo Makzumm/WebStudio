@@ -10,12 +10,19 @@
 
 .filters-list {
     margin-bottom: 50px;
+}
 
-    @media screen and (min-width: $tablet-width) {
-        .filters-list{
-            display: flex;
-            justify-content: center;
-        } 
+@media screen and (min-width: $tablet-width) {
+    .filters-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .filters-list {
+        display: flex;
+        justify-content: center;
     }
 }
 
