@@ -2,45 +2,67 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.header__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-nav{
-    display: none;
-}
-
 @media screen and (min-width: $tablet-width) {
-    .header-nav{
+    .header__container{
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        margin-right: 88px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 .nav-cont{
-    display: flex;
-    justify-content: space-between;
     display: none;
 }
 
-@media screen and (min-width: $tablet-width) {
+ @media screen and (min-width: $tablet-width) {
     .nav-cont {
         display: flex;
-        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .nav-cont {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: $tablet-width) {
+    .header-nav {
+        margin-right: 84px;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .header-nav {
+        margin-right: 305px;
     }
 }
 
 .header-nav__logo{
+    display: block;
     text-decoration: none;
     font-family: 'Raleway', 'Verdana';
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: $main-txt-color;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .header-nav__logo {
+        font-size: 26px;
+    }
 }
 
 .header-nav__accent{
@@ -50,7 +72,6 @@
 .header-menu{
     display: flex;
     gap: 50px;
-    margin-left: 0;
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -91,25 +112,52 @@
 }
 
 .header-contacts {
-    display: flex;
-    align-items: center;
-
+    display: none;
 }
 
-.headers-contacts__item {
-    margin-right: 30px;
+@media screen and (min-width: $tablet-width) {
+    .header-contacts{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: column;
+    }
+}
 
-    &:last-child {
+@media screen and (min-width: $tablet-width) {
+    .headers-contacts__item {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .header-contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .headers-contacts__item {
+        margin-right: 30px;
+        margin-bottom: 0;
+
+        &:last-child {
             margin-right: 0;
         }
+    }
 }
 
 .headers-contacts__link {
-    display: flex;
-    align-items: center;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $grey-color;
@@ -125,6 +173,13 @@
     }
 }
 
+@media screen and (min-width: $desktop-width) {
+    .headers-contacts__link{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+}
 .headers-contacts__icon {
     margin-right: 10px;
     fill: $current-svg-color;
