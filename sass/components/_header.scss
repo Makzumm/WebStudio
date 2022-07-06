@@ -1,5 +1,19 @@
-.header{
-    border-bottom: 1px solid #ECECEC;
+@media screen and (min-width: $tablet-width) {
+    .header {
+        border-bottom: 1px solid #ECECEC;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .header {
+        border-bottom: 1px solid #ECECEC;
+    }
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -50,6 +64,7 @@
 
 .header-nav__logo{
     display: block;
+    padding: 16px 0 16px 0;
     text-decoration: none;
     font-family: 'Raleway', 'Verdana';
     font-weight: 700;
@@ -185,3 +200,22 @@
     fill: $current-svg-color;
 }
 
+.menu-burger__close-button{
+    display: flex;
+    padding: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.menu-nav{
+    display: none;
+}
+
+.menu-burger__close-button:hover,
+.menu-burger__close-button:focus{
+    color: $light-blue-txt-color;
+}
+
+.menu-burger__close-icon{
+    fill: $current-svg-color;
+}
