@@ -696,7 +696,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .clients {
-    padding: 74px 0 94px 0;
+    padding: 94px 0 94px 0;
   }
 }
 .clients__title {
@@ -718,29 +718,33 @@ body {
 
 .client-list__item {
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 479px) {
   .client-list__item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
   }
-  .client-list__item:nth-child(even) {
+  .client-list__item:nth-child(2n) {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 479px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .client-list__item {
     width: calc((100% - 30px) / 2);
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
-  .client-list__item:nth-child(even) {
+  .client-list__item:nth-child(2n) {
     margin-right: 0;
+  }
+  .client-list__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client-list__item {
-    width: 226px;
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 30px;
   }
   .client-list__item:nth-child(3) {
     margin-right: -30px;
@@ -748,13 +752,14 @@ body {
   .client-list__item:nth-child(6) {
     margin-right: -30px;
   }
+  .client-list__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1199px) {
   .client-list__item {
     width: 170px;
-  }
-  .client-list__item:nth-child(3) {
-    margin-right: 30px;
+    margin-bottom: 0;
   }
   .client-list__item:nth-child(6) {
     margin-right: 0;
