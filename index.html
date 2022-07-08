@@ -67,7 +67,7 @@
         </div>
         <button
           data-menu-button
-          class="menu-burger__button is-open"
+          class="menu-burger__button"
           type="button"
           aria-expanded="false"
         >
@@ -76,46 +76,65 @@
               class="menu-burger__icon-menu"
               href="./images/sprite.svg#icon-header-menu-close"
             ></use>
-            <use
-              class="menu-burger__icon-cross"
-              href="./images/sprite.svg#icon-menu-burg-close"
-            ></use>
           </svg>
         </button>
         <!-- Menu burger-->
         <div data-menu class="menu-burger">
-          <ul class="menu-list">
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="./index.html">Студия</a>
+          <button
+            data-menu-close-button
+            type="button"
+            class="menu-burger__button"
+          >
+            <svg class="menu-burger__icon" width="40" height="40">
+              <use
+                class="menu-burger__icon-cross"
+                href="./images/sprite.svg#icon-menu-burg-close"
+              ></use>
+            </svg>
+          </button>
+          <ul class="menu-burger-list">
+            <li class="menu-burger-list__item">
+              <a
+                class="menu-burger-list__link menu-burger-list__link--current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="./portfolio.html">Портфолио</a>
+            <li class="menu-burger-list__item">
+              <a class="menu-burger-list__link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Контакты</a>
+            <li class="menu-burger-list__item">
+              <a class="menu-burger-list__link" href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="menu-contacts">
-            <li class="menu-contacts__item">
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <ul class="menu-burger-contacts">
+            <li class="menu-burger-contacts__item">
+              <a class="menu-burger-contacts__link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </li>
-            <li class="menu-contacts__item">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="menu-burger-contacts__item">
+              <a
+                class="menu-burger-contacts__link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
-          <ul class="header-socials">
-            <li class="header-socials__item">
-              <a class="header-socials__link" href="#">Instagram</a>
+          <ul class="menu-burger-socials">
+            <li class="menu-burger-socials__item">
+              <a class="menu-burger-socials__link" href="#">Instagram</a>
             </li>
-            <li class="header-socials__item">
-              <a class="header-socials__link" href="#">Twitter</a>
+            <li class="menu-burger-socials__item">
+              <a class="menu-burger-socials__link" href="#">Twitter</a>
             </li>
-            <li class="header-socials__item">
-              <a class="header-socials__link" href="#">Facebook</a>
+            <li class="menu-burger-socials__item">
+              <a class="menu-burger-socials__link" href="#">Facebook</a>
             </li>
-            <li class="header-socials__item">
-              <a class="header-socials__link" href="#">LinkedIn</a>
+            <li class="menu-burger-socials__item">
+              <a class="menu-burger-socials__link" href="#">LinkedIn</a>
             </li>
           </ul>
         </div>
