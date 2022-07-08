@@ -16,7 +16,6 @@
 })();
 
 (() => {
-  
   const refs = {
     closeMenuBrgBtn: document.querySelector("[data-menu-close-button]"),
     menuBrg: document.querySelector("[data-menu]"),
@@ -30,7 +29,6 @@
     refs.bodyClassToggle.classList.toggle("menu-burger-is-open");
     
   }
-  
 })();
 
 (() => {
