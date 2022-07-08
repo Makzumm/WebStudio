@@ -1,9 +1,9 @@
 .activity--section{
+    display: block;
     padding-top: 0;
-    display: none;
-
-    @media screen and (min-width: $desktop-width) {
-        display: block;
+    
+    @media screen and (max-width: 1199px) {
+        display: none;
     }
 }
 

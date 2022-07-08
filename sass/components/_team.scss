@@ -3,7 +3,7 @@
 }
 
 .team__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -12,10 +12,18 @@
     color: $main-txt-color;
 }
 
+    
 .team-members-list {
     display: block;
 
     @media screen and (min-width: $tablet-width) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

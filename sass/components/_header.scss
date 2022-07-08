@@ -199,23 +199,3 @@
     margin-right: 10px;
     fill: $current-svg-color;
 }
-
-.menu-burger__close-button{
-    display: flex;
-    padding: 0;
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.menu-nav{
-    display: none;
-}
-
-.menu-burger__close-button:hover,
-.menu-burger__close-button:focus{
-    color: $light-blue-txt-color;
-}
-
-.menu-burger__close-icon{
-    fill: $current-svg-color;
-}
