@@ -77,22 +77,34 @@
     }
 }
 
-
 .form-block {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-.form-block__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: $grey-color;
+.form-block__label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: $grey-color;
+    }
+
+@media screen and (min-width: $desktop-width) {
+    .form-block__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $grey-color;
+    }
 }
 
 .form-block_checkbox {
@@ -102,20 +114,22 @@
 }
 
 .form-block__icon {
+    width: 16px;
+    height: 15px;
     margin-right: 7px;
-    border: 2px solid $main-txt-color;
+    outline: 2px solid $main-txt-color;
+    outline-offset: -2px;
     border-radius: 2px;
     fill: $white-color;
     transition:
         background-color 250ms $transition-timing-function,
-        border-color 250ms $transition-timing-function,
-        border-origin 250ms $transition-timing-function,
+        outline-color 250ms $transition-timing-function,
         background-image 250ms $transition-timing-function;
 }
 
 .form-block_checkbox:checked+.form-block__icon {
     background-color: $light-blue-txt-color;
-    border: $light-blue-txt-color;
+    outline: $light-blue-txt-color;
     border-radius: 2px;
     background-origin: border-box;
     background-position: center;
@@ -127,10 +141,23 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $light-blue-txt-color;
+}
+
+@media screen and (min-width: $desktop-width){
+    .form-block__link {
+        display: inline-block;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color:$light-blue-txt-color;
+    }
 }
 
 .modal-form__button {
