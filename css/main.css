@@ -333,7 +333,7 @@ body {
 
 .section-hero {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   padding: 200px 0;
   margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimg.jpg);
@@ -435,17 +435,19 @@ body {
 .features-list__item:nth-child(4) {
   margin-bottom: 0;
 }
+
 @media screen and (min-width: 768px) {
   .features-list__item {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .features-list__item {
     width: 270px;
+    margin-bottom: 0;
   }
 }
-
 .container-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,6 +487,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 0;
 }
 
 .container-wrapper__icon {
@@ -1373,13 +1376,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 94px 15px 94px 15px;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .backdrop-container {
     position: fixed;
     top: 0;
@@ -1421,6 +1425,12 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal-container {
+    max-width: 450px;
+    max-height: 610px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-container {
     position: absolute;
@@ -1428,8 +1438,8 @@ body {
     left: 50%;
     min-width: 528px;
     min-height: 581px;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     border-radius: 4px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1446,7 +1456,41 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
 }
+.modal-container__button:hover,
+.modal-container__button :focus {
+  color: #2196F3;
+}
+.modal-container__button:active {
+  color: #0f4877;
+}
 
+@media screen and (min-width: 768px) {
+  .modal-container__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-container__button:hover,
+.modal-container__button :focus {
+    color: #2196F3;
+  }
+  .modal-container__button:active {
+    color: #0f4877;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-container__button {
     display: -webkit-box;
