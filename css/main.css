@@ -333,15 +333,56 @@ body {
 
 .section-hero {
   max-width: 1600px;
-  max-height: 600px;
-  padding: 200px 0;
-  margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimg.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimg.jpg);
+  max-height: 400px;
+  padding: 118px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-mob@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mob@1x.jpg);
   background-color: #2F303A;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx), screen and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-mob@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-tablet@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@1x.jpg);
+    background-color: #2F303A;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx), screen and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    max-height: 600px;
+    padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-desktop@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@1x.jpg);
+    background-color: #2F303A;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx), screen and (min-resolution: 192dpi), screen and (min-device-pixel-ratio: 2) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -632,7 +673,7 @@ body {
   color: #757575;
 }
 
-.team-members-social-net-list {
+.team-social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,17 +685,17 @@ body {
           align-items: center;
 }
 
-.team-members-social-net-list__item {
+.team-social-list__item {
   margin-left: 10px;
 }
-.team-members-social-net-list__item:nth-child(1) {
+.team-social-list__item:nth-child(1) {
   margin-left: 0;
 }
-.team-members-social-net-list__item:nth-child(4) {
+.team-social-list__item:nth-child(4) {
   margin-right: 0;
 }
 
-.team-members-social-net-list__link {
+.team-social-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,17 +712,17 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-members-social-net-list__link:hover,
-.team-members-social-net-list__link :focus {
+.team-social-list__link:hover,
+.team-social-list__link :focus {
   background-color: #2196F3;
   color: #ffffff;
 }
-.team-members-social-net-list__link:active {
+.team-social-list__link:active {
   background-color: #0f4877;
   color: #cecece;
 }
 
-.team-members-social-net-list__icon {
+.team-social-list__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -935,7 +976,7 @@ body {
     text-align: left;
   }
 }
-.footer-social-net-list {
+.footer-social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,17 +988,17 @@ body {
           align-items: center;
 }
 
-.footer-social-net-list__item {
+.footer-social-list__item {
   margin-left: 10px;
 }
-.footer-social-net-list__item:nth-child(1) {
+.footer-social-list__item:nth-child(1) {
   margin-left: 0;
 }
-.footer-social-net-list__item:nth-child(4) {
+.footer-social-list__item:nth-child(4) {
   margin-right: 0;
 }
 
-.footer-social-net-list__link {
+.footer-social-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,16 +1016,16 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-net-list__link:hover,
-.footer-social-net-list__link :focus {
+.footer-social-list__link:hover,
+.footer-social-list__link :focus {
   background-color: #2196F3;
 }
-.footer-social-net-list__link:active {
+.footer-social-list__link:active {
   background-color: #0f4877;
   fill: #cecece;
 }
 
-.footer-social-net-list__icon {
+.footer-social-list__icon {
   height: 20px;
   width: 20px;
   fill: currentColor;
@@ -1520,11 +1561,23 @@ body {
 }
 .modal-container__icon {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 19%;
+  right: 19%;
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .modal-container__icon {
+    top: 19%;
+    right: 18%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-container__icon {
+    top: 20%;
+    right: 18%;
+  }
+}
 .modal-form {
   padding: 40px;
 }

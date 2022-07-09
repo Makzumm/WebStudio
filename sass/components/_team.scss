@@ -73,13 +73,13 @@
     color: $grey-color;
 }
 
-.team-members-social-net-list {
+.team-social-list {
     display: flex;
     justify-content: center;
     align-items: center;
  }
 
-.team-members-social-net-list__item {
+.team-social-list__item {
     margin-left: 10px;
 
     &:nth-child(1) {
@@ -91,7 +91,7 @@
     }
 }
 
-.team-members-social-net-list__link {
+.team-social-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +114,7 @@
     }
 }
 
-.team-members-social-net-list__icon {
+.team-social-list__icon {
     width: 20px;
     height: 20px;
     fill: $current-svg-color;

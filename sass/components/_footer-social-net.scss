@@ -25,13 +25,13 @@
     }
 }
 
-.footer-social-net-list {
+.footer-social-list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-social-net-list__item {
+.footer-social-list__item {
     margin-left: 10px;
 
     &:nth-child(1) {
@@ -43,7 +43,7 @@
     }
 }
 
-.footer-social-net-list__link {
+.footer-social-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@
     }
 }
 
-.footer-social-net-list__icon {
+.footer-social-list__icon {
     height: 20px;
     width: 20px;
     fill: $current-svg-color;

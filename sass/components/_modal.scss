@@ -146,8 +146,22 @@
 
 .modal-container__icon {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 19%;
+    right: 19%;
     fill: $current-svg-color;
+}
+
+@media screen and (min-width: $tablet-width) {
+    .modal-container__icon {
+        top: 19%;
+        right: 18%;
+    }
+}
+
+@media screen and (min-width: $desktop-width){
+    .modal-container__icon{
+        top: 20%;
+        right: 18%;
+    }
 }
 
