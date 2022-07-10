@@ -223,34 +223,58 @@
           <ul class="activity-list">
             <li class="activity-list__item">
               <div class="activity-list__wrapper">
-                <img
-                  class="activity-list__thumb"
-                  src="./images/box1.jpg"
-                  alt="верстка сайту"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/box/box1@1x.jpg 1x,
+                      ./images/box/box1@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="activity-list__thumb"
+                    src="./images/box1@1x.jpg"
+                    alt="верстка сайту"
+                    width="370"
+                  />
+                </picture>
                 <p class="activity-list__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="activity-list__item">
               <div class="activity-list__wrapper">
-                <img
-                  class="activity-list__thumb"
-                  src="./images/box2.jpg"
-                  alt="адаптивність сайту"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/box/box2@1x.jpg 1x,
+                      ./images/box/box2@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="activity-list__thumb"
+                    src="./images/box2@1x.jpg"
+                    alt="верстка сайту"
+                    width="370"
+                  />
+                </picture>
                 <p class="activity-list__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="activity-list__item">
               <div class="activity-list__wrapper">
-                <img
-                  class="activity-list__thumb"
-                  src="./images/box3.jpg"
-                  alt="дизайн сайту"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/box/box3@1x.jpg 1x,
+                      ./images/box/box3@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="activity-list__thumb"
+                    src="./images/box3@1x.jpg"
+                    alt="верстка сайту"
+                    width="370"
+                  />
+                </picture>
                 <p class="activity-list__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -263,12 +287,36 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-members-list">
             <li class="team-members-list__item">
-              <img
-                src="./images/employee1.jpg"
-                alt="Перший працівник"
-                width="270"
-                class="team-members-list__pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/employee1/wrkr1-mob@1x.jpg  1x,
+                    ./images/team/employee1/wrkr1-mob@1x.webp 1x,
+                    ./images/team/employee1/wrkr1-mob@2x.jpg  2x,
+                    ./images/team/employee1/wrkr1-mob@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/employee1/wrkr1-desktp@1x.jpg 1x,
+                    ./images/team/employee1/wrkr1-desktp@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/employee1/wrkr1-tablt@1x.jpg 1x,
+                    ./images/team/employee1/wrkr1-tablt@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="activity-list__thumb"
+                  src="./images/team/employee1/wrkr1-desktp@1x.jpg"
+                  alt="Перший працівник"
+                />
+              </picture>
               <div class="team-members-information-block">
                 <h3 class="team-members-information-block__name">
                   Игорь Демьяненко
@@ -278,7 +326,11 @@
                 </p>
                 <ul class="team-social-list">
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Instagram"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -289,7 +341,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Twitter"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -300,7 +356,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Facebook"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -311,7 +371,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="LinkedIn"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -325,12 +389,34 @@
               </div>
             </li>
             <li class="team-members-list__item">
-              <img
-                src="./images/employee2.jpg"
-                alt="Другий працівник"
-                width="270"
-                class="team-members-list__pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/employee2/wrkr2-mob@1x.jpg 1x,
+                    ./images/team/employee2/wrkr2-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/employee2/wrkr2-desktp@1x.jpg 1x,
+                    ./images/team/employee2/wrkr2-desktp@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/employee2/wrkr2-tablt@1x.jpg 1x,
+                    ./images/team/employee2/wrkr2-tablt@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="activity-list__thumb"
+                  src="./images/team/employee2/wrkr2-desktp@1x.jpg"
+                  alt="Другий"
+                />
+              </picture>
               <div class="team-members-information-block">
                 <h3 class="team-members-information-block__name">
                   Ольга Репина
@@ -340,7 +426,11 @@
                 </p>
                 <ul class="team-social-list">
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Instagram"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -351,7 +441,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Twitter"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -362,7 +456,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Facebook"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -373,7 +471,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="LinkedIn"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -387,12 +489,34 @@
               </div>
             </li>
             <li class="team-members-list__item">
-              <img
-                src="./images/employee3.jpg"
-                alt="Третій працівник"
-                width="270"
-                class="team-members-list__pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/employee3/wrkr3-mob@1x.jpg 1x,
+                    ./images/team/employee3/wrkr3-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/employee3/wrkr3-tablt@1x.jpg 1x,
+                    ./images/team/employee3/wrkr3-tablt@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/employee3/wrkr3-desktp@1x.jpg 1x,
+                    ./images/team/employee3/wrkr3-desktp@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="activity-list__thumb"
+                  src="./images/team/employee3/wrkr3-desktp@1x.jpg"
+                  alt="Третій працівник"
+                />
+              </picture>
               <div class="team-members-information-block">
                 <h3 class="team-members-information-block__name">
                   Николай Тарасов
@@ -400,7 +524,11 @@
                 <p class="team-members-information-block__pos">Marketing</p>
                 <ul class="team-social-list">
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Instagram"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -411,7 +539,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Twitter"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -422,7 +554,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Facebook"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -433,7 +569,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="LinkedIn"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -447,12 +587,34 @@
               </div>
             </li>
             <li class="team-members-list__item">
-              <img
-                src="./images/employee4.jpg"
-                alt="Четвертий працівник"
-                width="270"
-                class="team-members-list__pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/employee4/wrkr4-mob@1x.jpg 1x,
+                    ./images/team/employee4/wrkr4-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/employee4/wrkr4-tablt@1x.jpg 1x,
+                    ./images/team/employee4/wrkr4-tablt@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/employee4/wrkr4-desktp@1x.jpg 1x,
+                    ./images/team/employee4/wrkr4-desktp@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="activity-list__thumb"
+                  src="./images/team/employee4/wrkr4-desktp@1x.jpg"
+                  alt="Четвертий працівник"
+                />
+              </picture>
               <div class="team-members-information-block">
                 <h3 class="team-members-information-block__name">
                   Михаил Ермаков
@@ -460,7 +622,11 @@
                 <p class="team-members-information-block__pos">UI Designer</p>
                 <ul class="team-social-list">
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Instagram"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -471,7 +637,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Twitter"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -482,7 +652,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="Facebook"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -493,7 +667,11 @@
                     </a>
                   </li>
                   <li class="team-social-list__item">
-                    <a class="team-social-list__link" href="#">
+                    <a
+                      class="team-social-list__link"
+                      href="#"
+                      aria-label="LinkedIn"
+                    >
                       <svg
                         class="team-social-list__icon"
                         width="44px"
@@ -515,42 +693,42 @@
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="client-list__item">
-              <a class="client-list__link" href="#">
+              <a class="client-list__link" href="#" aria-label="First-Client">
                 <svg class="client-list__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-Logo-1"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list__item">
-              <a class="client-list__link" href="#">
+              <a class="client-list__link" href="#" aria-label="Second-Client">
                 <svg class="client-list__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list__item">
-              <a class="client-list__link" href="#">
+              <a class="client-list__link" href="#" aria-label="Third-Client">
                 <svg class="client-list__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list__item">
-              <a class="client-list__link" href="#">
+              <a class="client-list__link" href="#" aria-label="Fourth-Client">
                 <svg class="client-list__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list__item">
-              <a class="client-list__link" href="#">
+              <a class="client-list__link" href="#" aria-label="Fifth-Client">
                 <svg class="client-list__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-Logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list__item">
-              <a class="client-list__link" href="#">
+              <a class="client-list__link" href="#" aria-label="Sixth-Client">
                 <svg class="client-list__icon" width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-Logo-6"></use>
                 </svg>
@@ -594,28 +772,44 @@
             <h2 class="footer-social-net-cont__title">Присоединяйтесь</h2>
             <ul class="footer-social-list">
               <li class="footer-social-list__item">
-                <a class="footer-social-list__link" href="#">
+                <a
+                  class="footer-social-list__link"
+                  href="#"
+                  aria-label="Instagram"
+                >
                   <svg class="footer-social-list__icon">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social-list__item">
-                <a class="footer-social-list__link" href="#">
+                <a
+                  class="footer-social-list__link"
+                  href="#"
+                  aria-label="Twitter"
+                >
                   <svg class="footer-social-list__icon">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social-list__item">
-                <a class="footer-social-list__link" href="#">
+                <a
+                  class="footer-social-list__link"
+                  href="#"
+                  aria-label="Facebook"
+                >
                   <svg class="footer-social-list__icon">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social-list__item">
-                <a class="footer-social-list__link" href="#">
+                <a
+                  class="footer-social-list__link"
+                  href="#"
+                  aria-label="LinkedIn"
+                >
                   <svg class="footer-social-list__icon">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
                   </svg>
@@ -653,7 +847,12 @@
     <!-- MODAL -->
     <div data-modal class="backdrop-container backdrop-container--is-hidden">
       <div class="modal-container">
-        <button data-modal-close class="modal-container__button">
+        <button
+          type="button"
+          data-modal-close
+          class="modal-container__button"
+          aria-label="button-close-modal"
+        >
           <svg class="modal-container__icon" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-close-icon"></use>
           </svg>

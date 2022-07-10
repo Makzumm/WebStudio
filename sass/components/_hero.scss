@@ -11,7 +11,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    
                 @media screen and (min-resolution: 2dppx),
                     screen and (min-resolution: 192dpi),
                     screen and (min-device-pixel-ratio: 2) {
@@ -26,12 +26,13 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        @media screen and (min-resolution: 2dppx),
+            screen and (min-resolution: 192dpi),
+            screen and (min-device-pixel-ratio: 2) {
+                background-image: $hero-gradient, url(../images/hero/hero-tablet@2x.jpg);
+            }
     }
-                @media screen and (min-resolution: 2dppx),
-                screen and (min-resolution: 192dpi),
-                screen and (min-device-pixel-ratio: 2) {
-                    background-image: $hero-gradient, url(../images/hero/hero-tablet@2x.jpg);
-                }
     
         @media screen and (min-width: $desktop-width){
         max-height: 600px;
@@ -43,29 +44,15 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        @media screen and (min-resolution: 2dppx),
+            screen and (min-resolution: 192dpi),
+            screen and (min-device-pixel-ratio: 2) {
+                background-image: $hero-gradient, url(../images/hero/hero-desktop@2x.jpg);
+            }
     }
 
-                @media screen and (min-resolution: 2dppx),
-                screen and (min-resolution: 192dpi),
-                screen and (min-device-pixel-ratio: 2) {
-                    background-image: $hero-gradient, url(../images/hero/hero-desktop@2x.jpg);
-                }
-
 }
-
-// @media screen and (min-width: $tablet-width) {
-//     .section-hero {
-//         max-width: 768px;
-//         max-height: 400px;
-//     }
-// }
-
-// @media screen and (min-width: $desktop-width){
-//     .section-hero{
-//         max-width: 1600px;
-//         max-height: 600px;
-//    }
-// }
 
 .hero__title {
     margin-bottom: 30px;
