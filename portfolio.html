@@ -20,24 +20,32 @@
     <!--Шапка сайту-->
     <header class="header">
       <div class="container header__container">
-        <a class="header-nav__logo" href="./index.html"
+        <a class="header-nav__logo" href="./index.html" aria-label="Логотип"
           ><span class="header-nav__accent">Web</span>Studio</a
         >
         <div class="nav-cont">
           <nav class="header-nav">
             <ul class="header-menu">
               <li class="header-menu__item">
-                <a class="header-menu__link" href="./index.html">Студия</a>
+                <a
+                  class="header-menu__link"
+                  href="./index.html"
+                  aria-label="Студия"
+                  >Студия</a
+                >
               </li>
               <li class="header-menu__item">
                 <a
                   class="header-menu__link header-menu__link--current"
                   href="./portfolio.html"
+                  aria-label="Портфолио"
                   >Портфолио</a
                 >
               </li>
               <li class="header-menu__item">
-                <a class="header-menu__link" href="#">Контакты</a>
+                <a class="header-menu__link" aria-label="Контакты" href="#"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
@@ -46,6 +54,7 @@
               <a
                 class="headers-contacts__link"
                 href="mailto:info@devstudio.com"
+                aria-label="Почта компании"
               >
                 <svg class="headers-contacts__icon" width="16px" height="12px">
                   <use href="./images/sprite.svg#icon-envelope"></use>
@@ -54,7 +63,11 @@
               </a>
             </li>
             <li class="headers-contacts__item">
-              <a class="headers-contacts__link" href="tel:+380961111111">
+              <a
+                class="headers-contacts__link"
+                href="tel:+380961111111"
+                aria-label="Номер телефона компании"
+              >
                 <svg class="headers-contacts__icon" width="10" height="16">
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
@@ -92,17 +105,25 @@
           </button>
           <ul class="menu-burger-list">
             <li class="menu-burger-list__item">
-              <a class="menu-burger-list__link" href="./index.html">Студия</a>
+              <a
+                class="menu-burger-list__link"
+                href="./index.html"
+                aria-label="Студия"
+                >Студия</a
+              >
             </li>
             <li class="menu-burger-list__item">
               <a
                 class="menu-burger-list__link menu-burger-list__link--current"
                 href="./portfolio.html"
+                aria-label="Портфолио"
                 >Портфолио</a
               >
             </li>
             <li class="menu-burger-list__item">
-              <a class="menu-burger-list__link" href="#">Контакты</a>
+              <a class="menu-burger-list__link" href="#" aria-label="Контакты"
+                >Контакты</a
+              >
             </li>
           </ul>
           <ul class="menu-burger-contacts">
@@ -110,6 +131,7 @@
               <a
                 class="menu-burger-contacts__link-first"
                 href="tel:+380961111111"
+                aria-label="Номер телефону компании"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -117,22 +139,40 @@
               <a
                 class="menu-burger-contacts__link-second"
                 href="mailto:info@devstudio.com"
+                aria-label="Почта компании"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
           <ul class="menu-burger-socials">
             <li class="menu-burger-socials__item">
-              <a class="menu-burger-socials__link" href="#">Instagram</a>
+              <a
+                class="menu-burger-socials__link"
+                href="#"
+                aria-label="Instagram"
+                >Instagram</a
+              >
             </li>
             <li class="menu-burger-socials__item">
-              <a class="menu-burger-socials__link" href="#">Twitter</a>
+              <a class="menu-burger-socials__link" href="#" aria-label="Twitter"
+                >Twitter</a
+              >
             </li>
             <li class="menu-burger-socials__item">
-              <a class="menu-burger-socials__link" href="#">Facebook</a>
+              <a
+                class="menu-burger-socials__link"
+                href="#"
+                aria-label="Facebook"
+                >Facebook</a
+              >
             </li>
             <li class="menu-burger-socials__item">
-              <a class="menu-burger-socials__link" href="#">LinkedIn</a>
+              <a
+                class="menu-burger-socials__link"
+                href="#"
+                aria-label="LinkedIn"
+                >LinkedIn</a
+              >
             </li>
           </ul>
         </div>
@@ -179,13 +219,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#">
                 <div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg1.jpg"
-                    alt="Веб-сайт пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb1/thumb1-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb1/thumb1-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb1/thumb1-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb1/thumb1-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb1/thumb1-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb1/thumb1-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb1/thumb1-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb1/thumb1-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb1/thumb1-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb1/thumb1-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb1/thumb1-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb1/thumb1-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb1/thumb1-dsktp@1x.jpg"
+                      alt="Веб-сайт пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -204,13 +289,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#">
                 <div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg2.jpg"
-                    alt="Постер пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb2/thumb2-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb2/thumb2-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb2/thumb2-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb2/thumb2-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb2/thumb2-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb2/thumb2-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb2/thumb2-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb2/thumb2-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb2/thumb2-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb2/thumb2-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb2/thumb2-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb2/thumb2-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb2/thumb2-dsktp@1x.jpg"
+                      alt="Дизайн пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -231,13 +361,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#">
                 <div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg3.jpg"
-                    alt="Приложение пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb3/thumb3-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb3/thumb3-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb3/thumb3-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb3/thumb3-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb3/thumb3-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb3/thumb3-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb3/thumb3-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb3/thumb3-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb3/thumb3-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb3/thumb3-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb3/thumb3-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb3/thumb3-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb3/thumb3-dsktp@1x.jpg"
+                      alt="Приложение пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -258,13 +433,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#"
                 ><div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg4.jpg"
-                    alt="Маркетинг пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb4/thumb4-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb4/thumb4-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb4/thumb4-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb4/thumb4-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb4/thumb4-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb4/thumb4-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb4/thumb4-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb4/thumb4-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb4/thumb4-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb4/thumb4-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb4/thumb4-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb4/thumb4-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb4/thumb4-dsktp@1x.jpg"
+                      alt="Маркетинг пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -285,13 +505,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#"
                 ><div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg5.jpg"
-                    alt="Приложение пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb5/thumb5-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb5/thumb5-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb5/thumb5-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb5/thumb5-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb5/thumb5-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb5/thumb5-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb5/thumb5-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb5/thumb5-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb5/thumb5-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb5/thumb5-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb5/thumb5-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb5/thumb5-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb5/thumb5-dsktp@1x.jpg"
+                      alt="Приложение пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -312,13 +577,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#">
                 <div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg6.jpg"
-                    alt="Веб-сайты пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb6/thumb6-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb6/thumb6-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb6/thumb6-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb6/thumb6-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb6/thumb6-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb6/thumb6-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb6/thumb6-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb6/thumb6-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb6/thumb6-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb6/thumb6-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb6/thumb6-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb6/thumb6-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb6/thumb6-dsktp@1x.jpg"
+                      alt="Веб-сайт пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -339,13 +649,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#"
                 ><div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg7.jpg"
-                    alt="Дизайн пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb7/thumb7-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb7/thumb7-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb7/thumb7-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb7/thumb7-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb7/thumb7-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb7/thumb7-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb7/thumb7-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb7/thumb7-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb7/thumb7-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb7/thumb7-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb7/thumb7-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb7/thumb7-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb7/thumb7-dsktp@1x.jpg"
+                      alt="Дизайн пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -366,13 +721,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#"
                 ><div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg8.jpg"
-                    alt="Маркетинг пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb8/thumb8-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb8/thumb8-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb8/thumb8-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb8/thumb8-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb8/thumb8-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb8/thumb8-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb8/thumb8-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb8/thumb8-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb8/thumb8-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb8/thumb8-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb8/thumb8-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb8/thumb8-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb8/thumb8-dsktp@1x.jpg"
+                      alt="Маркетинг пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -391,13 +791,58 @@
             <li class="template-list__item">
               <a class="template-list__link" href="#"
                 ><div class="template-thumb-container">
-                  <img
-                    src="./images/portfolioimg9.jpg"
-                    alt="Приложение пример"
-                    width="370px"
-                    height="294px"
-                    class="template-thumb-container__photo"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb9/thumb9-mob@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb9/thumb9-mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb9/thumb9-mob@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb9/thumb9-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb9/thumb9-dsktp@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb9/thumb9-dsktp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb9/thumb9-dsktp1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb9/thumb9-dsktp2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb9/thumb9-tablt@1x.webp 1x,
+                        ./images/portfolio-thumbs/thumb9/thumb9-tablt@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-thumbs/thumb9/thumb9-tablt@1x.jpg 1x,
+                        ./images/portfolio-thumbs/thumb9/thumb9-tablt@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/portfolio-thumbs/thumb9/thumb9-dsktp@1x.jpg"
+                      alt="Приложение пример"
+                      class="template-thumb-container__photo"
+                    />
+                  </picture>
                   <div class="pop-up-container">
                     <p class="pop-up-container__txt">
                       Ресурс предлагает комплексные предложения с разным уровнем
